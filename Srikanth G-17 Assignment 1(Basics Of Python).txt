@@ -1,0 +1,147 @@
+1) write a program to take input from the user and print prime if its a prime number else print non-prime number?
+
+
+primenumber=int(input("enter your number: "))
+
+if primenumber==2 :
+    print(primenumber, "is a primenumber")
+elif primenumber==3:
+    print(primenumber, "is a primenumber")
+elif primenumber==5:
+    print(primenumber, "is a primenumber")
+elif primenumber==7:
+    print(primenumber, "is a primenumber")
+elif primenumber%2==0:
+    print(primenumber, "is not a primenumber")
+elif primenumber%3==0:
+    print(primenumber, "is not a primenumber")
+elif primenumber%5==0:
+    print(primenumber, "is not a primenumber")
+elif primenumber%7==0:
+    print(primenumber, "is not a primenumber")
+else:
+    print(primenumber, "is a primenumber")
+
+
+
+                      or
+ primenumber=int(input("enter your number: "))
+flag=False
+if primenumber > 1: 
+    for i in range (2,primenumber):
+        if (primenumber%i)==0:
+            flag=True
+            break
+if flag:
+    print(primenumber,"is not a prime number")
+else:
+    print(primenumber,"is a prime number")
+
+
+          
+2) write a program to remove odd number from a input list? (create a list of numbers)
+
+numlist=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+for i in numlist:
+    if i%2!=0:
+        numlist.remove(i)
+    
+print (numlist)
+
+
+3 write a program to print first 100 Fibonacci series?
+
+num=int(input("enter your positive number: "))
+n1 , n2 = 0 , 1
+x=0
+for i in range(0,100):
+    n1=n2
+    n2=x
+    x=n1+n2
+    print(x)
+
+
+
+4 write a function which takes input and returns True if input is integer else returns False?
+
+
+num = 0
+while True:
+    try:
+        num = int ( input ("Enter your number: "))
+    except ValueError:
+        print(num,"is not an integer")
+        continue
+    else:
+        print(num, "is an integer")
+        break 
+ 
+
+
+5 write a function to reverse given list?
+
+
+num=int(input("enter your positive number: "))
+n1 , n2 = 0 , 1
+x=0
+for i in range(0,100):
+    n1=n2
+    n2=x
+    x=n1+n2
+    print(x)
+
+
+
+6 write a program to take 5 numerical inputs from the user and print the largest number
+
+
+numlist=[1,2,3,4,5,6,7,8,9,10]
+print(max(numlist))
+
+
+
+7 write a program to take input and write that input into a txt file
+
+
+
+txtfile=open("srikanth.txt","w")
+txtfile.write("Hi, Im srikanth.Thank you for opening my file ")
+txtfile.close()
+
+
+
+8 write a program to take radius from the user and print area of circle
+
+
+r = float(input ("enter the radius of circle : "))
+
+calculateArea = str(3.14159 * r**2);
+
+print (calculateArea, "is the area of circle " )
+
+
+
+9 write a program to demonstrate exception handling (any example)
+
+
+def func(x,y):
+    try:
+        return x/2+y/2
+    except Exception as error:
+        print(error)
+        
+x=int(input("please enter your first number: "))
+y=int(input("please enter your second number: "))
+
+print(func(x,y))
+
+
+
+10 write a program to take input from the user and print only vowels in the input
+
+
+word = input("Enter your word: ")
+
+for char in word:
+    if char.lower() in 'aeiou' and char.upper() in 'AEIOU':
+        print(char)
